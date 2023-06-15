@@ -1,0 +1,24 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'java'\r\n}\r\n\r\ngroup 'JavaGradleNet'\r\nversion '1.0-SNAPSHOT'\r\n\r\nrepositories {\r\n    mavenCentral()\r\n}\r\n\r\ndependencies {\r\n    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'\r\n    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'\r\n}\r\n\r\ntest {\r\n    useJUnitPlatform()\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	
++++ b/build.gradle	
+@@ -10,10 +10,9 @@
+ }
+ 
+ dependencies {
+-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
++    testImplementation 'junit:junit:4.13'
+ }
+ 
+ test {
+-    useJUnitPlatform()
++    useJUnit()
+ }
+\ No newline at end of file

@@ -1,0 +1,23 @@
+Index: src/main/java/service/CashbackHackService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class CashbackHackService {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/service/CashbackHackService.java b/src/main/java/service/CashbackHackService.java
+--- a/src/main/java/service/CashbackHackService.java	(revision 2e6f04a054d3b74faadb2cb2025fda6fbf8aada3)
++++ b/src/main/java/service/CashbackHackService.java	(date 1686841975606)
+@@ -1,2 +1,10 @@
++package service;
++
+ public class CashbackHackService {
+-}
++    public final int boundary = 1000;
++
++    public int remain(int amount) {
++
++        return boundary - amount % boundary;
++    }
++}
+\ No newline at end of file
